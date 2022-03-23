@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/simple-react-homeworks/static/css/main.92005619.css",
+    "main.js": "/simple-react-homeworks/static/js/main.a39c4659.js",
+    "index.html": "/simple-react-homeworks/index.html",
+    "main.92005619.css.map": "/simple-react-homeworks/static/css/main.92005619.css.map",
+    "main.a39c4659.js.map": "/simple-react-homeworks/static/js/main.a39c4659.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92005619.css",
+    "static/js/main.a39c4659.js"
+  ]
+}
