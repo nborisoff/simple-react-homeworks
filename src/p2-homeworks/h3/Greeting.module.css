@@ -1,0 +1,20 @@
+.someClass {
+
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-msg {
+    display: block;
+    color: red;
+}
+
+.total-users {
+    display: block;
+}
+
+.valid-input {
+    border: 1px solid limegreen;
+}

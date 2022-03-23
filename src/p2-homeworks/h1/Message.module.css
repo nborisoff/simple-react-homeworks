@@ -1,0 +1,118 @@
+hr {
+    border: 1px solid;
+}
+
+.message-wrapper-from {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.message-wrapper-to {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 0 10px 50%;
+}
+
+.user-logo-from, .user-logo-to {
+    width: 40px;
+    height: 40px;
+}
+
+.user-logo-from {
+    margin-right: 10px;
+}
+.user-logo-to {
+    margin-left: 10px;
+}
+
+.user-logo-from img, .user-logo-to img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.message-from, .message-to {
+    position: relative;
+    padding: 6px 8px 6px 8px;
+    min-width: 56px;
+    max-width: 30%;
+
+    background-color: #96c;
+    border: 1px solid #96c;
+    border-radius: 12px;
+
+    font-size: 12px;
+    word-wrap: break-word;
+    user-select: text;
+}
+
+.message-from::before, .message-from::after, .message-to::before, .message-to::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+}
+
+.message-from::before {
+    border-bottom-right-radius: 0.8rem 0.7rem;
+    border-left: 1rem solid #96c;
+    left: -0.35rem;
+    transform: translate(0, -0.1rem);
+}
+
+.message-from::after {
+    background-color: #3c3f41;
+    border-bottom-right-radius: 0.5rem;
+    left: 19px;
+    transform: translate(-30px, -2px);
+    width: 10px;
+}
+
+.message-to::before {
+    border-bottom-left-radius: 0.8rem 0.7rem;
+    border-right: 1rem solid #96c;
+    right: -0.35rem;
+    transform: translate(0, -0.1rem);
+}
+
+.message-to::after {
+    background-color: #3c3f41;
+    border-bottom-left-radius: 0.5rem;
+    right: -41px;
+    transform:translate(-30px, -2px);
+    width: 10px;
+}
+
+.message-who {
+    display: inline-block;
+    width: 100%;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.message-text {
+    font-size: 16px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.message-time {
+    position: relative;
+    display: inline-block;
+    float: right;
+    bottom: -7px;
+    padding-left: 7px;
+}
+
+.message-time span {
+    display: inline-block;
+
+    line-height: 1;
+    user-select: none;
+}
