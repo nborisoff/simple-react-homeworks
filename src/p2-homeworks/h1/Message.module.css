@@ -11,7 +11,7 @@ hr {
 .message-wrapper-to {
     display: flex;
     align-items: flex-end;
-    margin: 10px 0 10px 50%;
+    margin: 10px 0 10px 0;
 }
 
 .user-logo-from, .user-logo-to {
@@ -31,6 +31,7 @@ hr {
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    border: 1px solid black;
 }
 
 
@@ -49,6 +50,11 @@ hr {
     user-select: text;
 }
 
+.message-to {
+    background-color: #4EA6A6;
+    border: 1px solid #4EA6A6;
+}
+
 .message-from::before, .message-from::after, .message-to::before, .message-to::after {
     bottom: -0.1rem;
     content: "";
@@ -64,7 +70,7 @@ hr {
 }
 
 .message-from::after {
-    background-color: #3c3f41;
+    background-color: #F0FFF0;
     border-bottom-right-radius: 0.5rem;
     left: 19px;
     transform: translate(-30px, -2px);
@@ -73,13 +79,13 @@ hr {
 
 .message-to::before {
     border-bottom-left-radius: 0.8rem 0.7rem;
-    border-right: 1rem solid #96c;
+    border-right: 1rem solid #4EA6A6;
     right: -0.35rem;
     transform: translate(0, -0.1rem);
 }
 
 .message-to::after {
-    background-color: #3c3f41;
+    background-color: #F0FFF0;
     border-bottom-left-radius: 0.5rem;
     right: -41px;
     transform:translate(-30px, -2px);

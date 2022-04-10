@@ -4,24 +4,21 @@ import AlternativeMessage from "./AlternativeMessage";
 
 const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
-    message: 'some text',
+    name: 'Benedict',
+    message: 'Hello!',
     time: '22:00',
 }
 
 const alternativeMessageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
-    message: 'some text',
-    time: '22:00',
+    name: 'Carlos',
+    message: 'Hola!',
+    time: '22:01',
 }
 
 function HW1() {
     return (
         <div>
-            <hr/>
-            homeworks 1
-
             {/*should work (должно работать)*/}
             <hr/>
             <Message
@@ -31,14 +28,12 @@ function HW1() {
                 time={messageData.time}
             />
 
-            <hr/>
             <AlternativeMessage
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
+                avatar={alternativeMessageData.avatar}
+                name={alternativeMessageData.name}
+                message={alternativeMessageData.message}
+                time={alternativeMessageData.time}
             />
-            <hr/>
         </div>
     )
 }

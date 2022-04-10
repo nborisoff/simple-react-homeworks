@@ -1,0 +1,44 @@
+.menu {
+    display: flex;
+    color: #A64E4E;
+
+    transform: translate(-187px);
+    transition-duration: 300ms;
+}
+
+.menu:hover {
+    transform: translate(0);
+}
+
+.link {
+    margin: 5px 5px 5px 0;
+    text-decoration: none;
+    color: #4EA6A6;
+}
+
+.link:hover {
+    color: #A64E80;
+}
+
+.active {
+    color: #4EA64E;
+}
+
+.nav {
+    margin: 5px;
+}
+
+.error-404 {
+    width: 600px;
+    margin: 10% auto;
+}
+
+.error-404__img {
+    width: 264px;
+    margin: 0 auto;
+}
+
+.error-404__text {
+    text-align: center;
+    font-size: 2em;
+}
