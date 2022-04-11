@@ -16,7 +16,7 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
         ...restProps// все остальные пропсы попадут в объект restProps, там же будет children
     }
 ) => {
-    const finalClassName = function() {
+    const finalClassName = function () {
         if (trash) {
             return `${s.default} ${s["super-button__delete"]} ${className}`
         } else if (filter) {
