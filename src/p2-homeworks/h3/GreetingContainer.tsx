@@ -1,7 +1,6 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
-import s from './Greeting.module.css';
 
 type GreetingContainerPropsType = {
     users: Array<UserType>,
@@ -22,13 +21,13 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         setError("");
     }
     const addUser = () => {
-        if (name.trim() != "") {
-            alert(`Hello  ${name}!`)
+        if (name.trim() !== "") {
+            alert(`Hello ${name}!`)
             addUserCallback(name);
             setName("");
             setError("");
         } else {
-            setError("Name is require!")
+            setError("Name is require")
         }
     }
 

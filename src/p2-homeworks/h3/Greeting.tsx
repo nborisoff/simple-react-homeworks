@@ -20,10 +20,12 @@ const Greeting: React.FC<GreetingPropsType> = (
 
     return (
         <div>
-            <SuperInputText value={name} onChange={setNameCallback} className={inputClass} onKeyPress={onKeyPressInputHandler}/>
-            <SuperButton onClick={addUser}>add</SuperButton>
-            <span className={s["total-users"]}>Total users: {totalUsers}</span>
+            <div className={s["el-wrapper"]}>
+                <SuperInputText value={name} onChange={setNameCallback} className={inputClass} onKeyPress={onKeyPressInputHandler}/>
+                <SuperButton onClick={addUser}>add</SuperButton>
+            </div>
             <span className={s["error-msg"]}>{error}</span>
+            <span className={s["total-users"]}>Total users: {totalUsers}</span>
         </div>
     )
 }

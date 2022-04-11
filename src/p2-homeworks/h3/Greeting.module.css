@@ -1,5 +1,6 @@
-.someClass {
-
+.el-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .error {

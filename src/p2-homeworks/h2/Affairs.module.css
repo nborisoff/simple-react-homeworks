@@ -1,3 +1,31 @@
-.someClass {
+.affair {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
 
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.affair-data {
+    display: inline-block;
+}
+
+.priority-high {
+    color: orangered;
+}
+
+.priority-middle {
+    color: goldenrod;
+}
+
+.priority-low {
+    color: limegreen;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }

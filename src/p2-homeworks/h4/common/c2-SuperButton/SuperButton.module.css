@@ -1,7 +1,68 @@
 .default {
-
+    border: 2px solid #778899;
+    color: #778899;
 }
 
-.red {
-    background: red;
+.default:hover {
+    background: #778899;
+    color: #fff;
+}
+
+.default {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .2s ease-in-out;
+}
+
+.default:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+}
+
+.default:hover:before {
+    left: 150px;
+    transition: .5s ease-in-out;
+}
+
+.super-button__delete {
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+
+.super-button__delete:hover {
+    background: #dc3545;
+    color: #fff;
+}
+
+.super-button__filter {
+    border: 2px solid #FF8C00;
+    color: #FF8C00;
+}
+
+.super-button__filter:hover {
+    background: #FF8C00;
+    color: #fff;
+}
+
+.super-button__disabled {
+    border: 2px solid #DCDCDC;
+    color: #A9A9A9;
+}
+
+.super-button__disabled:hover {
+    background: #e9e9ed;
+    color: #A9A9A9;
+    cursor: no-drop;
 }
